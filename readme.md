@@ -34,3 +34,12 @@ If you use fish:
 cd ..
 fish_add_path raur
 ```
+
+## Using Raur
+
+```sh
+raur -S package   # install a package
+raur -s package   # search for a package
+raur -R package   # remove a package (pacman is better for this)
+raur -d           # debug mode
+```
