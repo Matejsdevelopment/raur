@@ -1,25 +1,36 @@
-Raur is a simple and fast Arch User Repository (AUR) helper made in the V programming language.
+# raur
 
-It is a small project made in two months (while grabbing little free time to code it).
+raur is a simple and fast Arch User Repository (AUR) helper made in the V programming language.
+It is a small project made in two months while grabbing little free time to code it.
+
 It uses the Meow Argument Parser.
 
-I ported some small parts of the ALPM to Vlang in this project too.
-The port is very small and is in the alpmhandling.v file, it is in the dependancyres module, but
-feel free to modify the module and use it for your own needs.
+I ported some small parts of ALPM to Vlang in this project too, the port is very small and lives in
+`dependancyres/alpmhandling.v`, feel free to use or modify it for your own needs.
 
-To install the V programming language use the following script:
-    git clone --depth=1 https://github.com/vlang/v
-    cd v
-    make
+## Warning
 
-To build Raur use the following script:
-    v . --enable-globals
-    ./raur
-    #if you use fish
-    cd ..
-    fish_add_path raur
+This project is nowhere close to Yay or Paru yet, it has many bugs and has some unused functions and maybe even entire files.
+The development of raur will likely continue.
 
-WARNING!:
-  This project is nowhere close to Yay or Paru yet, it has many bugs and has unused some functions and maybe even entire files.
+## Installing V
 
-The development of Raur will likely continue.
+```sh
+git clone --depth=1 https://github.com/vlang/v
+cd v
+make
+```
+
+## Building raur
+
+```sh
+v . --enable-globals
+./raur
+```
+
+If you use fish:
+
+```sh
+cd ..
+fish_add_path raur
+```
