@@ -128,7 +128,7 @@ fn sortpackagestotheirsources(dependancylist []string)			 ([]string, []string, [
 		} else {
 			unresolveddeps << dependancylist[i]
 		}
-		//USE LATER, ITS NICER ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 2.3.2026, gtg rn -_-
+		//USE LATER, ITS NICER ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 2.3.2026
 		//println(if result.exit_code == 0 { "${dependancylist[i]} [Pacman]" } else { if aurpkgexists(dependancylist[i]) {"${dependancylist[i]} [Aur]"} else {"Error while trying to install dependancy ${dependancylist[i]}, try to install it yourself."} })
 	}
 	return pacmandeps,aurdeps,unresolveddeps
